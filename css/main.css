@@ -29,6 +29,12 @@
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
 /*-------------- 1.1 headings ---------------- */
+h1 {
+	padding-bottom: 70px;
+}
+#roasts header {
+	float: none;
+}
 /*-------------- 1.2 body copy ---------------- */
 /*-------------- 1.3 buttons ---------------- */
 /*-------------- 1.4 forms ---------------- */
@@ -38,6 +44,13 @@
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
 /*-------------- 2.1 main menu ---------------- */
+nav ul li {
+	display: inline;
+	text-decoration: none;
+	padding-right: 65px;
+	padding-left: 60px;
+}
+
 /*-------------- 2.2 sub menu ---------------- */
 /*-------------- 2.3 footer menu ---------------- */
 /*--------------------------------------------------------------
@@ -49,13 +62,40 @@
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
+#hb {
+	background: url(../img/TF-HB.png) no-repeat;
+	width: 150px;
+	height: 200px;
+}
+#eo {
+	background: url(../img/EO.png) no-repeat;
+	width: 120px;
+	height: 169px;
+}
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
 /*--------------5.1 - Background Colors ---------------- */
+#bkgrnd-img {
+	background-color: #939598;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+.bkgrnd-grey {
+	background-color: #E6E7E8;
+}
+.col-3-5 {
+	background-color: #A7A9AC;
+}
 /*-------------- 5.2 - Text Colors ---------------- */
 /*-------------- 5.3 - Text Sizes ---------------- */
 /*-------------- 5.4 - Alignments ---------------- */
+body {
+	padding: 0px 20px;
+}
+.txt-algn-cntr {
+	text-align: center;
+}
 *,*:after, *:before {
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -83,9 +123,12 @@ img{
 [class*='col-']:last-of-type{
 	padding-right: 0;
 }
-
+.grey {
+	background-color: grey;
+}
 .col-1-1 {
 	width: 100%;
+	margin: 0px;
 }
 .col-1-2 {
 	width: 50%;
@@ -95,9 +138,12 @@ img{
 }
 .col-1-4 {
 	width: 25%;
+	margin: 0px;
+	padding: 0px;
 }
 .col-1-5 {
 	width: 20%;
+	padding: 0px;
 }
 .col-1-6 {
 	width: 16.66%;
@@ -130,7 +176,7 @@ img{
 	width: 60%
 }
 .col-2-5 {
-	width: 40%
+	width: 40%;
 }
 .col-5-6 {
 	width: 83.33%;
