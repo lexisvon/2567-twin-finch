@@ -62,15 +62,10 @@ nav ul li {
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
-#hb {
-	background: url(../img/TF-HB.png) no-repeat;
-	width: 150px;
-	height: 200px;
-}
-#eo {
-	background: url(../img/EO.png) no-repeat;
-	width: 120px;
-	height: 169px;
+#hb, #eo  {
+	background-color: #808285;
+	width: 190px;
+	height: 218px;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY
