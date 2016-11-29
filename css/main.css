@@ -45,13 +45,39 @@ h3 {
 h3 + p {
 	margin-top: 10px;
 }
+#newsletter p {
+	margin: 0px;
+}
 /*-------------- 1.2 body copy ---------------- */
 h2 + p {
 	margin-bottom: 60px;
 }
-
+body {
+	font-family: 'Libre Baskerville', serif;
+}
+h2, a, #bkgrnd-img:nth-child(2), h3, h3 + p, .col-3-5:nth-child(6) {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+}
 /*-------------- 1.3 buttons ---------------- */
+a {
+	text-decoration: none;
+	color: #4B4B4B;
+}
 /*-------------- 1.4 forms ---------------- */
+label {
+	display: none;
+}
+#contact input {
+	display: block;
+}
+#newsletter p, #newsletter form {
+	display: inline;
+}
+#newsletter {
+	padding: 40px;
+	text-align: right;
+}
 /*-------------- 1.5 lists ---------------- */
 /*-------------- 1.6 tables ---------------- */
 /*--------------------------------------------------------------
@@ -78,10 +104,14 @@ nav {
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
-#hb, #eo  {
+#about-img  {
 	background-color: #808285;
-	width: 190px;
-	height: 218px;
+	width: 500px;
+	height: 450px;
+}
+#map {
+	height: 200px;
+	margin-top:100px;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY
@@ -97,6 +127,17 @@ nav {
 }
 .col-3-5 {
 	background-color: #A7A9AC;
+}
+.bkgrnd-q-n {
+	background-color: #BCBEC0;
+
+}
+blockquote {
+	margin: 0 auto;
+}
+blockquote p {
+	margin: 0 auto;
+	padding: 70px;
 }
 /*-------------- 5.2 - Text Colors ---------------- */
 /*-------------- 5.3 - Text Sizes ---------------- */
@@ -231,7 +272,9 @@ img{
 
 
 @media (max-width: 480px) {
-
+	body {
+		padding: 0px;
+	}
 }
 /* This quarter only need one media querie this is android size. iphone 320
 @media (max-width: 420px) { 
