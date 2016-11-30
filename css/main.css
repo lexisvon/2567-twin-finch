@@ -45,7 +45,7 @@ h3 {
 h3 + p {
 	margin-top: 10px;
 }
-#newsletter p {
+#newsletter p, blockquote p, .col-1-1 {
 	margin: 0px;
 }
 /*-------------- 1.2 body copy ---------------- */
@@ -64,6 +64,19 @@ a {
 	text-decoration: none;
 	color: #4B4B4B;
 }
+footer #sprites li:first-child a {
+	background: url(../img/sprite-fb.png) no-repeat;
+}
+footer #sprites ul li:first-child a {
+	width: 50px;
+	height: 50px;
+}
+footer #sprites ul li:first-child a:hover {
+	background-position: 0 -50px;
+}
+footer #sprites ul li {
+	display: inline-block;
+}
 /*-------------- 1.4 forms ---------------- */
 label {
 	display: none;
@@ -71,7 +84,7 @@ label {
 #contact input {
 	display: block;
 }
-#newsletter p, #newsletter form {
+#newsletter h4, #newsletter form, #newsletter p, nav ul li {
 	display: inline;
 }
 #newsletter {
@@ -79,14 +92,16 @@ label {
 	text-align: right;
 }
 /*-------------- 1.5 lists ---------------- */
+ul {
+	list-style: none;
+	padding: 0px;
+}
 /*-------------- 1.6 tables ---------------- */
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
 /*-------------- 2.1 main menu ---------------- */
 nav ul li {
-	display: inline;
-	text-decoration: none;
 	padding-right: 65px;
 	padding-left: 60px;
 }
@@ -95,6 +110,16 @@ nav {
 }
 /*-------------- 2.2 sub menu ---------------- */
 /*-------------- 2.3 footer menu ---------------- */
+footer img {
+	width: 40%;
+}
+footer ul {
+	-o-column-count: 2;
+	-ms-column-count: 2;
+	-webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+}
 /*--------------------------------------------------------------
 3.0 - CONTENT
 -------------------------------------------------------------- */
@@ -120,7 +145,6 @@ nav {
 #bkgrnd-img {
 	background-color: #939598;
 	padding-top: 50px;
-	margin: 0 auto;
 }
 .bkgrnd-grey {
 	background-color: #E6E7E8;
@@ -132,16 +156,19 @@ nav {
 	background-color: #BCBEC0;
 
 }
-blockquote {
+blockquote, #bkgrnd-img, .wrapper {
 	margin: 0 auto;
 }
 blockquote p {
-	margin: 0 auto;
 	padding: 70px;
 }
 /*-------------- 5.2 - Text Colors ---------------- */
 /*-------------- 5.3 - Text Sizes ---------------- */
 /*-------------- 5.4 - Alignments ---------------- */
+
+#f-right {
+	float: right;
+}
 body {
 	padding: 0px 20px;
 }
@@ -156,7 +183,6 @@ body {
 	box-sizing: border-box;
 }
 .wrapper {
-	margin: 0 auto;
 	width: 75%; 
 }
 .row:after {
@@ -175,9 +201,6 @@ img{
 [class*='col-']:last-of-type{
 	padding-right: 0;
 }
-.grey {
-	background-color: grey;
-}
 .col-1-1 {
 	width: 100%;
 	margin: 0px;
@@ -193,88 +216,118 @@ img{
 	margin: 0px;
 	padding: 0px;
 }
-.col-1-5 {
-	width: 20%;
-	padding: 0px;
-}
-.col-1-6 {
-	width: 16.66%;
-}
-.col-1-7 {
-	width: 14.2%;
-}
-.col-1-8 {
-	width: 12.5%
-}
-.col-1-9 {
-	width: 11.11%;
-}
-.col-1-10 {
-	width: 10%;
-}
-.col-1-11 {
-	width: 9.091%
-}
-.col-1-12 {
-	width: 8.33%;
-}
-.col-2-3 {
-	width: 66.66%
-}
-.col-3-4 {
-	width: 75%
-}
 .col-3-5 {
 	width: 60%;
 }
 .col-2-5 {
 	width: 40%;
 }
-.col-5-6 {
-	width: 83.33%;
-}
-.col-3-7 {
-	width: 43%;
-}
-.col-4-7 {
-	width: 57%;
-}
-.col-5-8 {
-	width: 62.5%;
-}
-.col-3-8 {
-	width: 37.5%;
-}
-.col-2-9 {
-	width: 22.2%;
-}
-.col-7-9 {
-	width: 77.8%;
-}
-.col-3-10 {
-	width: 30%;
-}
-.col-7-10 {
-	width: 70%;
-}
-.col-5-11 {
-	width: 45%;
-}
-.col-6-11 {
-	width: 55%;
-}
-.col-11-12 {
-	width: 91.67%;
-}
+
 
 
 
 
 
 @media (max-width: 480px) {
+	/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Sub Menu
+	3.3 - Footer Menu
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+	3.2 - Section Name
+	3.3 - Section Name
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+/*-------------- 1.1 headings ---------------- */
+	h1 {
+		padding-bottom: 20px;
+	}
+/*-------------- 1.2 body copy ---------------- */
+/*-------------- 1.3 buttons ---------------- */
+/*-------------- 1.4 forms ---------------- */
+/*-------------- 1.5 lists ---------------- */
+/*-------------- 1.6 tables ---------------- */
+/*--------------------------------------------------------------
+2.0 - NAVIGATION MENUS
+-------------------------------------------------------------- */
+/*-------------- 2.1 main menu ---------------- */
+	nav ul li {
+		padding: 0px 20px;
+		font-size: 1.2rem;
+	}
+
+/*-------------- 2.2 sub menu ---------------- */
+/*-------------- 2.3 footer menu ---------------- */
+/*--------------------------------------------------------------
+3.0 - CONTENT
+-------------------------------------------------------------- */
+/*-------------- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---------------- */
+	.wrapper {
+		width: 100%;
+	}
 	body {
 		padding: 0px;
 	}
+	.col-1-3 {
+		width: 100%;
+	}
+	.col-1-2 {
+		width: 100%;
+	}
+	.col-2-5, .col-3-5 {
+		width: 50%;
+		background-color: #A7A9AC;
+		margin: 0px;
+	}
+	.col-1-1 {
+		padding-right: 0px;
+	}
+/*-------------- 3.2 - Section Name ---------------- */
+/*-------------- 3.3 - Section Name ---------------- */
+/*--------------------------------------------------------------
+4.0 - MEDIA
+-------------------------------------------------------------- */
+	h1 img {
+		max-width: 40%;
+	}
+	#bkgrnd-img {
+		padding-top: 25px;
+	}
+	#about-img {
+		display: none;
+	}
+	footer img {
+		width: 100%;
+	}
+/*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+/*--------------5.1 - Background Colors ---------------- */
+/*-------------- 5.2 - Text Colors ---------------- */
+/*-------------- 5.3 - Text Sizes ---------------- */
+/*-------------- 5.4 - Alignments ---------------- */
+
+
+	
 }
 /* This quarter only need one media querie this is android size. iphone 320
 @media (max-width: 420px) { 
