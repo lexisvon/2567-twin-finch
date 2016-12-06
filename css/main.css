@@ -79,6 +79,7 @@ h2 + p {
 	font-weight: 100;
 	letter-spacing: .5px;
 	line-height: 1.2rem;
+	padding: 0px 300px;
 }
 h2, a, #bkgrnd-img:nth-child(2), h3, .col-3-5:nth-child(6), .col-2-5 p {
 	text-transform: uppercase;
@@ -179,6 +180,9 @@ footer ul {
 }
 #map {
 	height: 200px;
+}
+.col-3-5 div{
+	border-bottom: solid thin white;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY
