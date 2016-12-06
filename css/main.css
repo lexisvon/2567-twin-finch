@@ -28,7 +28,7 @@
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
-body, h1 + p, #bkgrnd-img a, h3 + p, .col-2-5 p, #disclaimer, blockquote p {
+body, h1 + p, #bkgrnd-img a, .col-2-5 p, #disclaimer, blockquote p {
 	font-family: 'Playfair Display', serif;
 }
 p {
@@ -71,7 +71,7 @@ h1 + p {
 	text-transform: none;
 	margin-bottom: 45px;
 }
-h1 + p, h2, .col-2-5 p {
+h1 + p, h2, .col-2-5 p, h3 {
 	letter-spacing: 2px;
 }
 h2 + p {
@@ -80,11 +80,8 @@ h2 + p {
 	letter-spacing: .5px;
 	line-height: 1.2rem;
 }
-h2, a, #bkgrnd-img:nth-child(2), h3, h3 + p, .col-3-5:nth-child(6), .col-2-5 p {
+h2, a, #bkgrnd-img:nth-child(2), h3, .col-3-5:nth-child(6), .col-2-5 p {
 	text-transform: uppercase;
-}
-h3 + p {
-	margin-top: 10px;
 }
 
 .col-2-5 p {
@@ -182,7 +179,6 @@ footer ul {
 }
 #map {
 	height: 200px;
-	margin-top:100px;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY
@@ -212,9 +208,6 @@ blockquote p {
 	padding: 60px 300px;
 }
 /*-------------- 5.2 - Text Colors ---------------- */
-h3 + p {
-	color: #BA9F64;
-}
 /*-------------- 5.3 - Text Sizes ---------------- */
 /*-------------- 5.4 - Alignments ---------------- */
 #f-right {
@@ -267,11 +260,77 @@ img{
 	margin: 0px;
 	padding: 0px;
 }
+.col-1-5 {
+	width: 20%;
+}
+.col-1-6 {
+	width: 16.66%;
+}
+.col-1-7 {
+	width: 14.2%;
+}
+.col-1-8 {
+	width: 12.5%
+}
+.col-1-9 {
+	width: 11.11%;
+}
+.col-1-10 {
+	width: 10%;
+}
+.col-1-11 {
+	width: 9.091%
+}
+.col-1-12 {
+	width: 8.33%;
+}
+.col-2-3 {
+	width: 66.66%
+}
+.col-3-4 {
+	width: 75%
+}
 .col-3-5 {
-	width: 60%;
+	width: 60%
 }
 .col-2-5 {
-	width: 40%;
+	width: 40%
+}
+.col-5-6 {
+	width: 83.33%;
+}
+.col-3-7 {
+	width: 43%;
+}
+.col-4-7 {
+	width: 57%;
+}
+.col-5-8 {
+	width: 62.5%;
+}
+.col-3-8 {
+	width: 37.5%;
+}
+.col-2-9 {
+	width: 22.2%;
+}
+.col-7-9 {
+	width: 77.8%;
+}
+.col-3-10 {
+	width: 30%;
+}
+.col-7-10 {
+	width: 70%;
+}
+.col-5-11 {
+	width: 45%;
+}
+.col-6-11 {
+	width: 55%;
+}
+.col-11-12 {
+	width: 91.67%;
 }
 
 
