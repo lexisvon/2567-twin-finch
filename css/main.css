@@ -28,9 +28,23 @@
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
+body, h1 + p, #bkgrnd-img a, h3 + p, .col-2-5 p, #disclaimer, blockquote p {
+	font-family: 'Playfair Display', serif;
+}
+p {
+	font-family: 'Oxygen', sans-serif;
+}
+h1 + p, #bkgrnd-img a  {
+	color: #fff;
+}
+#bkgrnd-img a {
+	letter-spacing: 1px;
+	font-size: .9rem;
+}
 /*-------------- 1.1 headings ---------------- */
+
 h1 {
-	padding-bottom: 70px;
+	padding-bottom: 60px;
 }
 #roasts header {
 	float: none;
@@ -38,43 +52,66 @@ h1 {
 h2 {
 	margin-top: 0px;
 	padding-top: 60px;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 400;
 }
 h3 {
 	margin-bottom: 0px;
 }
-h3 + p {
-	margin-top: 10px;
-}
+
 #newsletter p, blockquote p, .col-1-1 {
 	margin: 0px;
 }
 /*-------------- 1.2 body copy ---------------- */
+h1 + p {
+	font-size: 1.7rem;
+	line-height: 35px;
+	font-weight: 700;
+	text-transform: none;
+	margin-bottom: 45px;
+}
+h1 + p, h2, .col-2-5 p {
+	letter-spacing: 2px;
+}
 h2 + p {
-	margin-bottom: 60px;
+	margin-bottom: 80px;
+	font-weight: 100;
+	letter-spacing: .5px;
+	line-height: 1.2rem;
 }
-body {
-	font-family: 'Libre Baskerville', serif;
-}
-h2, a, #bkgrnd-img:nth-child(2), h3, h3 + p, .col-3-5:nth-child(6) {
-	font-family: 'Source Sans Pro', sans-serif;
+h2, a, #bkgrnd-img:nth-child(2), h3, h3 + p, .col-3-5:nth-child(6), .col-2-5 p {
 	text-transform: uppercase;
 }
+h3 + p {
+	margin-top: 10px;
+}
+
+.col-2-5 p {
+	font-size: .9rem;
+}
+#disclaimer {
+	font-style: italic;
+}
 /*-------------- 1.3 buttons ---------------- */
+#bkgrnd-img a {
+	padding: 12px 15px;
+}
 a {
 	text-decoration: none;
 	color: #4B4B4B;
 }
-footer #sprites li:first-child a {
+#sprites li:first-child a {
 	background: url(../img/sprite-fb.png) no-repeat;
 }
-footer #sprites ul li:first-child a {
+#sprites ul li:first-child a {
 	width: 50px;
 	height: 50px;
 }
-footer #sprites ul li:first-child a:hover {
+#sprites ul li:first-child a:hover {
 	background-position: 0 -50px;
 }
-footer #sprites ul li {
+#sprites ul li {
 	display: inline-block;
 }
 /*-------------- 1.4 forms ---------------- */
@@ -104,6 +141,7 @@ ul {
 nav ul li {
 	padding-right: 65px;
 	padding-left: 60px;
+	font-size: .8rem;
 }
 nav {
 	padding: 15px 0px;
@@ -129,9 +167,17 @@ footer ul {
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
+#bkgrnd-img{
+	background: url(../img/hero.jpg) no-repeat 0 -120px;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 30px 0px 100px 0px;
+}
 #about-img  {
 	background-color: #808285;
-	width: 500px;
 	height: 450px;
 }
 #map {
@@ -142,30 +188,35 @@ footer ul {
 5.0 - UTILITY
 -------------------------------------------------------------- */
 /*--------------5.1 - Background Colors ---------------- */
-#bkgrnd-img {
-	background-color: #939598;
-	padding-top: 50px;
+#bkgrnd-img a, blockquote {
+	background-color: #BA9F64;
+}
+#bkgrnd-img a:hover {
+	background-color: #7B6955;
+}
+#newsletter {
+	background-color: #1A1E25;
 }
 .bkgrnd-grey {
-	background-color: #E6E7E8;
+	background-color: #EFEFEF;
 }
 .col-3-5 {
-	background-color: #A7A9AC;
+	background-color: #1A1E25;
+	color: #EFEFEF;
 }
-.bkgrnd-q-n {
-	background-color: #BCBEC0;
 
-}
 blockquote, #bkgrnd-img, .wrapper {
 	margin: 0 auto;
 }
 blockquote p {
-	padding: 70px;
+	padding: 60px 300px;
 }
 /*-------------- 5.2 - Text Colors ---------------- */
+h3 + p {
+	color: #BA9F64;
+}
 /*-------------- 5.3 - Text Sizes ---------------- */
 /*-------------- 5.4 - Alignments ---------------- */
-
 #f-right {
 	float: right;
 }
