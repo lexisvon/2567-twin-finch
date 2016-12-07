@@ -28,18 +28,20 @@
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
-body, h1 + p, #bkgrnd-img a, .col-2-5 p, #disclaimer, blockquote p {
+body, h1 + p, #bkgrnd-img a, .col-2-5 p, #disclaimer, blockquote p, .col-3-5 p:nth-child(2), .col-3-5 a, .col-3-5 p:nth-child(6), #espresso p:nth-child(5) {
 	font-family: 'Playfair Display', serif;
 }
-p {
+p, #espresso p:nth-child(2) {
 	font-family: 'Oxygen', sans-serif;
 }
-h1 + p, #bkgrnd-img a  {
+h1 + p, #bkgrnd-img a, .col-3-5 a, #espresso p {
 	color: #fff;
 }
 #bkgrnd-img a {
 	letter-spacing: 1px;
-	font-size: .9rem;
+}
+h2 + p, .col-3-5, #disclaimer {
+	font-weight: 100;
 }
 /*-------------- 1.1 headings ---------------- */
 
@@ -53,11 +55,10 @@ h2 {
 	margin-top: 0px;
 	padding-top: 60px;
 	text-align: center;
-	font-size: 1.5rem;
 	font-weight: 400;
 }
 h3 {
-	margin-bottom: 0px;
+	margin: 0px;
 }
 
 #newsletter p, blockquote p, .col-1-1 {
@@ -65,7 +66,6 @@ h3 {
 }
 /*-------------- 1.2 body copy ---------------- */
 h1 + p {
-	font-size: 1.7rem;
 	line-height: 35px;
 	font-weight: 700;
 	text-transform: none;
@@ -76,41 +76,39 @@ h1 + p, h2, .col-2-5 p, h3 {
 }
 h2 + p {
 	margin-bottom: 80px;
-	font-weight: 100;
 	letter-spacing: .5px;
 	line-height: 1.2rem;
 	padding: 0px 300px;
 }
-h2, a, #bkgrnd-img:nth-child(2), h3, .col-3-5:nth-child(6), .col-2-5 p {
+h2, nav a, .col-3-5 a, #bkgrnd-img:nth-child(2), h3, .col-3-5:nth-child(6), .col-2-5 p, .col-3-5 p:nth-child(2) {
 	text-transform: uppercase;
 }
-
-.col-2-5 p {
-	font-size: .9rem;
+#espresso p:nth-child(2) {
+	text-transform: inherit;
 }
+
+
 #disclaimer {
 	font-style: italic;
 }
+.col-3-5 p:nth-child(2){
+	color: #BA9F64;
+}
 /*-------------- 1.3 buttons ---------------- */
+a, nav a {
+	text-decoration: none;
+}
 #bkgrnd-img a {
 	padding: 12px 15px;
 }
-a {
-	text-decoration: none;
+.col-3-5 a {
+	padding: 6px 40px;
+}
+#roasts-2 .col-3-5 a {
+	padding: 4px 20px;
+}
+nav a {
 	color: #4B4B4B;
-}
-#sprites li:first-child a {
-	background: url(../img/sprite-fb.png) no-repeat;
-}
-#sprites ul li:first-child a {
-	width: 50px;
-	height: 50px;
-}
-#sprites ul li:first-child a:hover {
-	background-position: 0 -50px;
-}
-#sprites ul li {
-	display: inline-block;
 }
 /*-------------- 1.4 forms ---------------- */
 label {
@@ -139,7 +137,6 @@ ul {
 nav ul li {
 	padding-right: 65px;
 	padding-left: 60px;
-	font-size: .8rem;
 }
 nav {
 	padding: 15px 0px;
@@ -181,17 +178,19 @@ footer ul {
 #map {
 	height: 200px;
 }
-.col-3-5 div{
+.col-3-5 div {
 	border-bottom: solid thin white;
+	width: 45%;
+	margin: 0 auto;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
 /*--------------5.1 - Background Colors ---------------- */
-#bkgrnd-img a, blockquote {
+#bkgrnd-img a, blockquote, .col-3-5 a {
 	background-color: #BA9F64;
 }
-#bkgrnd-img a:hover {
+#bkgrnd-img a:hover, .col-3-5 a:hover {
 	background-color: #7B6955;
 }
 #newsletter {
@@ -213,6 +212,19 @@ blockquote p {
 }
 /*-------------- 5.2 - Text Colors ---------------- */
 /*-------------- 5.3 - Text Sizes ---------------- */
+.col-2-5 p, h2 + p, #bkgrnd-img a, #roasts-2 p {
+	font-size: .9rem;
+}
+nav ul li {
+	font-size: .8rem;
+}
+h2 {
+	font-size: 1.8rem;
+}
+h1 + p {
+	font-size: 1.7rem;
+
+}
 /*-------------- 5.4 - Alignments ---------------- */
 #f-right {
 	float: right;
@@ -274,7 +286,7 @@ img{
 	width: 14.2%;
 }
 .col-1-8 {
-	width: 12.5%
+	width: 12.5%;
 }
 .col-1-9 {
 	width: 11.11%;
@@ -283,22 +295,26 @@ img{
 	width: 10%;
 }
 .col-1-11 {
-	width: 9.091%
+	width: 9.091%;
 }
 .col-1-12 {
 	width: 8.33%;
 }
 .col-2-3 {
-	width: 66.66%
+	width: 66.66%;
 }
 .col-3-4 {
-	width: 75%
+	width: 75%;
 }
 .col-3-5 {
-	width: 60%
+	width: 60%;
+	padding: 30px !important;
+}
+#roasts-2 .col-3-5{
+	padding: 20px 10px !important;
 }
 .col-2-5 {
-	width: 40%
+	width: 40%;
 }
 .col-5-6 {
 	width: 83.33%;
