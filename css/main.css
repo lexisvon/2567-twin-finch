@@ -28,71 +28,94 @@
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
-body, h1 + p, #bkgrnd-img a, .col-2-5 p, #disclaimer, blockquote p, .col-3-5 p:nth-child(2), .col-3-5 a, .col-3-5 p:nth-child(6), #espresso p:nth-child(5) {
+body, h1 + p, #bkgrnd-img a, .col-2-5 p, #disclaimer, blockquote p, .col-3-5 p:nth-child(2), .col-3-5 a, .col-3-5 p:nth-child(6), #espresso p:nth-child(5), #newsletter a, #contact a {
 	font-family: 'Playfair Display', serif;
 }
-p, #espresso p:nth-child(2) {
+p, #espresso p:nth-child(2), footer nav {
 	font-family: 'Oxygen', sans-serif;
 }
-h1 + p, #bkgrnd-img a, .col-3-5 a, #espresso p {
+h1 + p, #bkgrnd-img a, .col-3-5 a, #espresso p, blockquote p, h4, #newsletter a, #contact a {
 	color: #fff;
 }
-#bkgrnd-img a {
+body, nav a, blockquote a, #about a {
+	color: #4B4B4B;
+}
+.col-3-5 p:nth-child(2){
+	color: #BA9F64;
+}
+#bkgrnd-img a, .col-3-5, h2 + p, blockquote p, #about, #contact, h4, input, #newsletter a {
 	letter-spacing: 1px;
-}
-h2 + p, .col-3-5, #disclaimer {
-	font-weight: 100;
-}
-/*-------------- 1.1 headings ---------------- */
-
-h1 {
-	padding-bottom: 60px;
-}
-#roasts header {
-	float: none;
-}
-h2 {
-	margin-top: 0px;
-	padding-top: 60px;
-	text-align: center;
-	font-weight: 400;
-}
-h3 {
-	margin: 0px;
-}
-
-#newsletter p, blockquote p, .col-1-1 {
-	margin: 0px;
-}
-/*-------------- 1.2 body copy ---------------- */
-h1 + p {
-	line-height: 35px;
-	font-weight: 700;
-	text-transform: none;
-	margin-bottom: 45px;
 }
 h1 + p, h2, .col-2-5 p, h3 {
 	letter-spacing: 2px;
 }
+h2 + p, .col-3-5, .col-1-2, h4  {
+	font-weight: 100;
+}
+strong, h1 + p {
+	font-weight: 700;
+}
+.col-1-2, h2 + p {
+	line-height: 1.2rem;
+}
+.col-2-5 p, h2 + p, #bkgrnd-img a, #roasts-2 p, #about-img + .col-1-2, #contact p, #newsletter   {
+	font-size: .9rem;
+}
+nav ul li, #contact input, textarea, #contact a {
+	font-size: .8rem;
+}
+h2 {
+	font-size: 1.8rem;
+}
+h1 + p {
+	font-size: 1.7rem;
+}
+blockquote p {
+	font-size: 1.5rem;
+}
+h4, .col-3-5 p:nth-child(2), blockquote a {
+	font-size: 1.2rem;
+}
+/*-------------- 1.1 headings ---------------- */
+h1 {
+	padding-bottom: 60px;
+}
+h2 {
+	margin-top: 0px;
+	padding-top: 60px;
+	font-weight: 400;
+}
+h4 {
+	margin-right: 120px;
+	margin-left: 70px;
+}
+/*-------------- 1.2 body copy ---------------- */
+h1 + p {
+	line-height: 35px;
+	text-transform: none;
+	margin-bottom: 45px;
+	padding: 0% 20%;
+}
 h2 + p {
 	margin-bottom: 80px;
-	letter-spacing: .5px;
-	line-height: 1.2rem;
-	padding: 0px 300px;
+	padding: 0% 30%;
 }
-h2, nav a, .col-3-5 a, #bkgrnd-img:nth-child(2), h3, .col-3-5:nth-child(6), .col-2-5 p, .col-3-5 p:nth-child(2) {
+h2, nav a, .col-3-5 a, #bkgrnd-img:nth-child(2), h3, .col-3-5:nth-child(6), .col-2-5 p, .col-3-5 p:nth-child(2), h4, #newsletter form input, #newsletter a, #contact a, #contact input, textarea {
 	text-transform: uppercase;
 }
 #espresso p:nth-child(2) {
 	text-transform: inherit;
 }
-
-
 #disclaimer {
 	font-style: italic;
+	margin-top: 40px;
+	margin-bottom: 70px;
 }
-.col-3-5 p:nth-child(2){
-	color: #BA9F64;
+#about-img + .col-1-2 {
+	margin-top: 125px;
+}
+#contact p, #about-img + .col-1-2, #contact form{
+	padding-left: 40px;
 }
 /*-------------- 1.3 buttons ---------------- */
 a, nav a {
@@ -107,8 +130,15 @@ a, nav a {
 #roasts-2 .col-3-5 a {
 	padding: 4px 20px;
 }
-nav a {
-	color: #4B4B4B;
+#about a {
+	text-decoration: underline;
+}
+#newsletter a {
+	padding: 10px 30px;
+	margin-left: 25px;
+}
+#contact a {
+	padding: 5px 50px;
 }
 /*-------------- 1.4 forms ---------------- */
 label {
@@ -121,8 +151,66 @@ label {
 	display: inline;
 }
 #newsletter {
-	padding: 40px;
+	padding: 45px 0px;
+}
+#newsletter form input {
+	border: solid thin #fff;
+	background-color: #1A1E25;
+	padding: 10px 7px;
+	width: 32%;
+}
+#contact form input, textarea {
+	border: solid 1.8px #1A1E25;
+	background-color: #F0EFEF;
+}
+#contact input, textarea {
+	width: 97%;
+	padding: 10px 5px;
+}
+#contact input {
+	margin-bottom: 15px;
+}
+#contact form p {
 	text-align: right;
+	padding-right: 14px;
+}
+#contact .col-1-2, #about-img {
+	margin: 50px 0px;
+}
+#contact #map a {
+	background-color: transparent;
+	font-family: inherit;
+	font-size: inherit;
+}
+#contact .wrapper{
+	padding-bottom: 40px;
+}
+#newsletter ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #EFEFEF;
+}
+#newsletter ::-moz-placeholder { /* Firefox 19+ */
+  color: #EFEFEF;
+}
+#newsletter :-ms-input-placeholder { /* IE 10+ */
+  color: #EFEFEF;
+}
+#newsletter :-moz-placeholder { /* Firefox 18- */
+  color: #EFEFEF;
+}
+#contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #1A1E25;
+}
+#contact ::-moz-placeholder { /* Firefox 19+ */
+  color: #1A1E25;
+}
+#contact :-ms-input-placeholder { /* IE 10+ */
+  color: #1A1E25;
+}
+#contact :-moz-placeholder { /* Firefox 18- */
+  color: #1A1E25;
+}
+input[type="email"] {
+	color: #EFEFEF;
 }
 /*-------------- 1.5 lists ---------------- */
 ul {
@@ -153,10 +241,26 @@ footer ul {
     -moz-column-count: 2; 
     column-count: 2;
 }
+footer nav ul li {
+	padding: 0px 12px;
+}
+footer nav {
+	padding: 0px;
+}
+footer nav ul {
+	margin: 0px;
+}
 /*--------------------------------------------------------------
 3.0 - CONTENT
 -------------------------------------------------------------- */
 /*-------------- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---------------- */
+.col-3-5 p:nth-child(2), blockquote a {
+	margin-top: 10px;
+	margin-bottom: 35px;
+}
+#about {
+	padding-bottom: 80px;
+}
 /*-------------- 3.2 - Section Name ---------------- */
 /*-------------- 3.3 - Section Name ---------------- */
 /*--------------------------------------------------------------
@@ -172,8 +276,8 @@ footer ul {
 	padding: 30px 0px 100px 0px;
 }
 #about-img  {
-	background-color: #808285;
-	height: 450px;
+	background: url(../img/about.jpg) no-repeat 0 -30px;
+	height: 400px;
 }
 #map {
 	height: 200px;
@@ -181,16 +285,15 @@ footer ul {
 .col-3-5 div {
 	border-bottom: solid thin white;
 	width: 45%;
-	margin: 0 auto;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
 /*--------------5.1 - Background Colors ---------------- */
-#bkgrnd-img a, blockquote, .col-3-5 a {
+#bkgrnd-img a, blockquote, .col-3-5 a, #newsletter a, #contact a {
 	background-color: #BA9F64;
 }
-#bkgrnd-img a:hover, .col-3-5 a:hover {
+#bkgrnd-img a:hover, .col-3-5 a:hover, #newsletter a:hover, #contact a:hover {
 	background-color: #7B6955;
 }
 #newsletter {
@@ -203,28 +306,14 @@ footer ul {
 	background-color: #1A1E25;
 	color: #EFEFEF;
 }
-
-blockquote, #bkgrnd-img, .wrapper {
+blockquote, #bkgrnd-img, .wrapper, .col-3-5 div, h3, #newsletter p, blockquote p {
 	margin: 0 auto;
 }
 blockquote p {
-	padding: 60px 300px;
+	padding: 5% 20%;
 }
 /*-------------- 5.2 - Text Colors ---------------- */
 /*-------------- 5.3 - Text Sizes ---------------- */
-.col-2-5 p, h2 + p, #bkgrnd-img a, #roasts-2 p {
-	font-size: .9rem;
-}
-nav ul li {
-	font-size: .8rem;
-}
-h2 {
-	font-size: 1.8rem;
-}
-h1 + p {
-	font-size: 1.7rem;
-
-}
 /*-------------- 5.4 - Alignments ---------------- */
 #f-right {
 	float: right;
@@ -232,7 +321,7 @@ h1 + p {
 body {
 	padding: 0px 20px;
 }
-.txt-algn-cntr {
+.txt-algn-cntr, h2, h5, h5 + p {
 	text-align: center;
 }
 *,*:after, *:before {
@@ -263,7 +352,6 @@ img{
 }
 .col-1-1 {
 	width: 100%;
-	margin: 0px;
 }
 .col-1-2 {
 	width: 50%;
@@ -273,8 +361,6 @@ img{
 }
 .col-1-4 {
 	width: 25%;
-	margin: 0px;
-	padding: 0px;
 }
 .col-1-5 {
 	width: 20%;
