@@ -16,31 +16,33 @@
 	function init() {
 		// Basic options for a simple Google Map
 		// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+		
 		var mapOptions = {
 			// How zoomed in you want the map to start at (always required)
 			zoom: 12,
 
 			// The latitude and longitude to center the map (always required)
-			center: new google.maps.LatLng(45.5111003,-122.6637244), // New York
-
+			center: new google.maps.LatLng(45.5111003,-122.6637244), // Portland, Oregon
+			scrollwheel: false,
 			// How you would like to style the map. 
+			
 			// This is where you would paste any style found on Snazzy Maps.
 			styles: [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]
 		};
-
 		// Get the HTML DOM element that will contain your map 
 		// We are using a div with id="map" seen below in the <body>
 		var mapElement = document.getElementById('map');
 
 		// Create the Google Map using our element and options defined above
 		var map = new google.maps.Map(mapElement, mapOptions);
-
+	
 		// Let's also add a marker while we're at it
 		var marker = new google.maps.Marker({
 			position: new google.maps.LatLng(45.5111003,-122.6637244),
 			map: map,
 			title: 'Twin Finch'
 		});
+
 
 	}
 </script>
@@ -50,7 +52,7 @@
 <body>
 	<header class="txt-algn-cntr">
 		<div class="wrapper">
-			<nav class="row" id="smooth-scroll">
+			<nav id="smooth-scroll">
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#roasts">Roasts</a></li>
@@ -190,13 +192,13 @@
 	</section>
 	<section id="newsletter">
 		<header class="wrapper">
-			<h4>Sign up for our newsletter</h4>
-			<form>
-				<label for="email">Enter Email Address</label>
-				<input type="email" name="email" id="email" placeholder="Email">
-				<p><a href="#">Sign Up</a></p>
-			</form>
+			<p>Sign up for our newsletter</p>
 		</header>
+		<form>
+			<label for="email">Enter Email Address</label>
+			<input type="email" name="email" id="email" placeholder="Email">
+			<p><a href="#">Sign Up</a></p>
+		</form>
 	</section>
 	<section class="bkgrnd-grey" id="contact">
 		<div class="wrapper">
@@ -219,7 +221,6 @@
 			</div>
 		</div>
 		<div id="map"></div>
-		
 	</section>
 	<footer class="wrapper">
 		<div class="row">
@@ -227,11 +228,11 @@
 				<a href="#"><img src="img/logo.png" alt="Twin Finch Roastery"></a>
 			</div>
 			<div class="col-1-4">
-				<h5>Contact</h5>
+				<h4>Contact</h4>
 				<p>457 NW Market Street Portland, OR</p>
 			</div>
 			<div class="col-1-4">
-				<h5>Site Map</h5>
+				<h4>Site Map</h4>
 				<nav>
 					<ul>
 						<li><a href="#">Home</a></li>

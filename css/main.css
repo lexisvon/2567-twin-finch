@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 /* CSS Document */
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -25,475 +27,726 @@
 	5.3 - Text Sizes
 	5.4 - Alignments
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
-body, h1 + p, #bkgrnd-img a, .col-2-5 p, #disclaimer, blockquote p, .col-3-5 p:nth-child(2), .col-3-5 a, .col-3-5 p:nth-child(6), #espresso p:nth-child(5), #newsletter a, #contact a {
-	font-family: 'Playfair Display', serif;
-}
-p, #espresso p:nth-child(2), footer nav {
-	font-family: 'Oxygen', sans-serif;
-}
-h1 + p, #bkgrnd-img a, .col-3-5 a, #espresso p, blockquote p, h4, #newsletter a, #contact a {
-	color: #fff;
-}
-body, nav a, blockquote a, #about a {
-	color: #4B4B4B;
-}
-.col-3-5 p:nth-child(2), nav a:hover{
-	color: #BA9F64;
-}
-#bkgrnd-img a, .col-3-5, h2 + p, blockquote p, #about, #contact, h4, input, #newsletter a {
-	letter-spacing: 1px;
-}
-h1 + p, h2, .col-2-5 p, h3 {
-	letter-spacing: 2px;
-}
-h2 + p, .col-3-5, .col-1-2, h4  {
-	font-weight: 100;
-}
-strong, h1 + p {
-	font-weight: 700;
-}
-.col-1-2, h2 + p {
-	line-height: 1.2rem;
-}
-.col-2-5 p, h2 + p, #bkgrnd-img a, #about-img + .col-1-2, #contact p, #newsletter, .col-3-5 p  {
-	font-size: .9rem;
-}
-nav ul li, #contact input, textarea, #contact a, #roasts-2 p {
-	font-size: .8rem;
-}
-h2 {
-	font-size: 1.8rem;
-}
-h1 + p {
-	font-size: 1.7rem;
-}
-blockquote p {
-	font-size: 1.5rem;
-}
-h4, .col-3-5 p:nth-child(2), blockquote a {
-	font-size: 1.2rem;
-}
-h2, nav a, .col-3-5 a, #bkgrnd-img:nth-child(2), h3, .col-3-5:nth-child(6), .col-2-5 p, .col-3-5 p:nth-child(2), h4, h5, #newsletter form input, #newsletter a, #contact a, #contact input, textarea {
-	text-transform: uppercase;
-}
-#espresso p:nth-child(2) {
-	text-transform: inherit;
-}
-/*-------------- 1.1 headings ---------------- */
-h1 {
-	padding-bottom: 60px;
-}
-h2 {
-	margin-top: 0px;
-	padding-top: 60px;
-	font-weight: 400;
-}
-h4 {
-	margin-right: 120px;
-	margin-left: 70px;
-}
-/*-------------- 1.2 body copy ---------------- */
-h1 + p {
-	line-height: 35px;
-	text-transform: none;
-	margin-bottom: 45px;
-	padding: 0% 20%;
-}
-h2 + p {
-	margin-bottom: 80px;
-	padding: 0% 30%;
-}
-#disclaimer {
-	font-style: italic;
-	margin-top: 40px;
-	margin-bottom: 70px;
-}
-#about-img + .col-1-2 {
-	margin-top: 125px;
-}
-#contact p, #about-img + .col-1-2, #contact form{
-	padding-left: 40px;
-}
-blockquote p {
-	padding: 5% 20%;
-}
-/*-------------- 1.3 buttons ---------------- */
-a, nav a {
-	text-decoration: none;
-}
-#bkgrnd-img a {
-	padding: 12px 15px;
-}
-.col-3-5 a {
-	padding: 6px 40px;
-}
-#roasts-2 .col-3-5 a {
-	padding: 4px 20px;
-}
-#about a {
-	text-decoration: underline;
-}
-#newsletter a {
-	padding: 10px 30px;
-	margin-left: 25px;
-}
+
+body,
+h1 + p,
+#bkgrnd-img a,
+.col-2-5 p,
+#disclaimer,
+blockquote p,
+.col-3-5 p:nth-child(2),
+.col-3-5 a,
+.col-3-5 p:nth-child(6),
+#espresso p:nth-child(5),
+#newsletter p,
 #contact a {
-	padding: 5px 50px;
+  font-family: 'Playfair Display', serif;
 }
+
+p,
+#espresso p:nth-child(2),
+footer nav {
+  font-family: 'Oxygen', sans-serif;
+}
+
+h1 + p,
+#bkgrnd-img a,
+.col-3-5 a,
+#espresso p,
+blockquote p,
+#newsletter p,
+#newsletter a,
+#contact a {
+  color: #fff;
+}
+
+body,
+nav a,
+blockquote a,
+#about a {
+  color: #4B4B4B;
+}
+
+.col-3-5 p:nth-child(2),
+nav a:hover {
+  color: #BA9F64;
+}
+
+#bkgrnd-img a,
+.col-3-5,
+h2 + p,
+blockquote p,
+#about,
+#contact,
+#newsletter p,
+input {
+  letter-spacing: 1px;
+}
+
+h1 + p,
+h2,
+.col-2-5 p,
+h3 {
+  letter-spacing: 2px;
+}
+
+h2 + p,
+.col-3-5,
+.col-1-2,
+#newsletter p {
+  font-weight: 100;
+}
+
+strong,
+h1 + p {
+  font-weight: 700;
+}
+
+.col-1-2,
+h2 + p, footer .col-1-4:nth-child(2) p {
+  line-height: 1.2rem;
+}
+
+.col-2-5 p,
+h2 + p,
+#bkgrnd-img a,
+#about-img + .col-1-2,
+#contact p,
+#newsletter,
+.col-3-5 p, h4 {
+  font-size: .9rem;
+}
+
+nav ul li,
+#contact input,
+textarea,
+#contact a,
+#roasts-2 p, footer .col-1-4:nth-child(2) p {
+  font-size: .8rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h1 + p {
+  font-size: 1.7rem;
+}
+
+blockquote p {
+  font-size: 1.5rem;
+}
+
+#newsletter header p,
+.col-3-5 p:nth-child(2),
+blockquote a {
+  font-size: 1.2rem;
+}
+
+h2, nav a, .col-3-5 a, #bkgrnd-img:nth-child(2), h3,
+.col-3-5:nth-child(6), .col-2-5 p, .col-3-5 p:nth-child(2), h4, #newsletter, #newsletter form input, #contact a, #contact input, textarea {
+  text-transform: uppercase;
+}
+
+#espresso p:nth-child(2) {
+  text-transform: inherit;
+}
+
+/*-------------- 1.1 headings ---------------- */
+
+h1 {
+  padding-bottom: 60px;
+}
+
+h2 {
+  margin-top: 0px;
+  padding-top: 60px;
+  font-weight: 400;
+}
+
+#newsletter header p {
+  margin-right: 120px;
+  margin-left: 70px;
+}
+
+/*-------------- 1.2 body copy ---------------- */
+
+h1 + p {
+  line-height: 35px;
+  text-transform: none;
+  margin-bottom: 45px;
+  padding: 0% 20%;
+}
+
+h2 + p {
+  margin-bottom: 80px;
+  padding: 0% 30%;
+}
+
+#disclaimer {
+  font-style: italic;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+#about-img + .col-1-2 {
+  margin-top: 125px;
+}
+
+#contact p,
+#about-img + .col-1-2,
+#contact form {
+  padding-left: 40px;
+}
+
+blockquote p {
+  padding: 5% 20%;
+}
+
+/*-------------- 1.3 buttons ---------------- */
+
+a,
+nav a {
+  text-decoration: none;
+}
+
+#bkgrnd-img a {
+  padding: 12px 15px;
+}
+
+.col-3-5 a {
+  padding: 6px 40px;
+}
+
+#roasts-2 .col-3-5 a {
+  padding: 4px 20px;
+}
+
+#about a {
+  text-decoration: underline;
+}
+
+#newsletter a {
+  padding: 10px 30px;
+  margin-left: 25px;
+}
+
+#contact a {
+  padding: 5px 50px;
+}
+
 footer .col-1-4:last-child ul li:first-child a {
-	background: url(../img/sprite-fb.png) no-repeat;
+  background: url(../img/sprite-fb.png) no-repeat;
 }
+
 footer .col-1-4:last-child ul li:nth-child(2) a {
-	background: url(../img/sprite-tw.png) no-repeat;
+  background: url(../img/sprite-tw.png) no-repeat;
 }
+
 footer .col-1-4:last-child ul li:last-child a {
-	background: url(../img/sprite-google.png) no-repeat;
+  background: url(../img/sprite-google.png) no-repeat;
 }
- footer .col-1-4:last-child ul li:first-child a, footer .col-1-4:last-child ul li:nth-child(2) a, footer .col-1-4:last-child ul li:last-child a {
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-}  
-footer .col-1-4:last-child ul li:first-child a:hover, footer .col-1-4:last-child ul li:nth-child(2) a:hover, footer .col-1-4:last-child ul  li:last-child a:hover {
-	background-position: 0 -50px;
+
+footer .col-1-4:last-child ul li:first-child a,
+footer .col-1-4:last-child ul li:nth-child(2) a,
+footer .col-1-4:last-child ul li:last-child a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
 }
+
+footer .col-1-4:last-child ul li:first-child a:hover,
+footer .col-1-4:last-child ul li:nth-child(2) a:hover,
+footer .col-1-4:last-child ul  li:last-child a:hover {
+  background-position: 0 -50px;
+}
+
 footer .col-1-4:last-child li {
-	padding: 10px;
+  padding: 10px;
 }
+
 /*-------------- 1.4 forms ---------------- */
+
 #newsletter {
-	padding: 45px 0px;
+  padding: 45px 0px;
 }
+
 #newsletter form input {
-	border: solid thin #fff;
-	background-color: #1A1E25;
-	padding: 10px 7px;
-	width: 32%;
+  background: #1A1E25;
+  border: solid thin #fff;
+  padding: 10px 7px;
+  width: 32%;
 }
-#contact form input, textarea {
-	border: solid 1.8px #1A1E25;
-	background-color: #F0EFEF;
+
+#contact form input,
+textarea {
+  background: #F0EFEF;
+  border: solid 1.8px #1A1E25;
 }
-#contact input, textarea {
-	width: 97%;
-	padding: 10px 5px;
+
+#contact input,
+textarea {
+  width: 97%;
+  padding: 10px 5px;
 }
+
 #contact input {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
+
 #contact form p {
-	text-align: right;
-	padding-right: 14px;
+  text-align: right;
+  padding-right: 14px;
 }
-#contact .col-1-2, #about-img {
-	margin: 50px 0px;
+
+#contact .col-1-2,
+#about-img {
+  margin: 50px 0px;
 }
+
 #contact #map a {
-	background-color: transparent;
-	font-family: inherit;
-	font-size: inherit;
+  font: inherit;
+  background: transparent;
 }
-#contact .wrapper{
-	padding-bottom: 40px;
+
+#contact .wrapper {
+  padding-bottom: 40px;
 }
-#newsletter ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  	color: #EFEFEF;
+
+#newsletter ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #EFEFEF;
 }
-#newsletter ::-moz-placeholder { /* Firefox 19+ */
-  	color: #EFEFEF;
+
+#newsletter ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #EFEFEF;
 }
-#newsletter :-ms-input-placeholder { /* IE 10+ */
- 	color: #EFEFEF;
+
+#newsletter :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #EFEFEF;
 }
-#newsletter :-moz-placeholder { /* Firefox 18- */
-	color: #EFEFEF;
+
+#newsletter :-moz-placeholder {
+  /* Firefox 18- */
+  color: #EFEFEF;
 }
-#contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  	color: #1A1E25;
+
+#contact ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #1A1E25;
 }
-#contact ::-moz-placeholder { /* Firefox 19+ */
-  	color: #1A1E25;
+
+#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #1A1E25;
 }
-#contact :-ms-input-placeholder { /* IE 10+ */
-  	color: #1A1E25;
+
+#contact :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #1A1E25;
 }
-#contact :-moz-placeholder { /* Firefox 18- */
-  	color: #1A1E25;
+
+#contact :-moz-placeholder {
+  /* Firefox 18- */
+  color: #1A1E25;
 }
-input[type="email"], .col-3-5 {
-	color: #EFEFEF;
+
+input[type="email"],
+.col-3-5 {
+  color: #EFEFEF;
 }
+
 /*-------------- 1.5 lists ---------------- */
+
 ul {
-	list-style: none;
-	padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
+
 /*-------------- 1.6 tables ---------------- */
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
+
 /*-------------- 2.1 main menu ---------------- */
+
 nav ul li {
-	padding-right: 65px;
-	padding-left: 60px;
+  padding-right: 65px;
+  padding-left: 60px;
 }
+
 nav {
-	padding: 15px 0px;
+  padding: 15px 0px;
 }
+
 /*-------------- 2.2 sub menu ---------------- */
+
 /*-------------- 2.3 footer menu ---------------- */
+
 footer img {
-	width: 50%;
+  width: 50%;
 }
+
 footer .col-1-4:nth-child(3) ul {
-	-o-column-count: 2;
-	-ms-column-count: 2;
-	-webkit-column-count: 2; 
-    -moz-column-count: 2; 
-    column-count: 2;
+  -o-column-count: 2;
+  -ms-column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
+
 footer nav ul li {
-	padding: 0px 12px;
+  padding: 0px 12px;
 }
+
 footer nav {
-	padding: 0px;
+  padding: 0px;
 }
+
 footer nav ul {
-	margin: 0px;
+  margin: 0px;
 }
-footer .col-1-4:first-child, footer .col-1-4:last-child {
-	margin-top: 40px;
+
+footer .col-1-4:first-child,
+footer .col-1-4:last-child {
+  margin-top: 40px;
 }
+
 footer .col-1-4:nth-child(2) {
-	padding: 0px 30px;
+ 	padding: 0px 30px;
 }
+
 footer .col-1-4:nth-child(3) {
-	padding-right: 90px;
-	padding-left: 30px;
+  padding-right: 90px;
+  padding-left: 30px;
+}
+footer nav ul li a {
+	text-transform: none;
+	font-weight: 400;
 }
 /*--------------------------------------------------------------
 3.0 - CONTENT
 -------------------------------------------------------------- */
+
 /*-------------- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---------------- */
-blockquote, #bkgrnd-img, .wrapper, .col-3-5 div, h3, #newsletter p, blockquote p {
-	margin: 0 auto;
+
+blockquote,
+#bkgrnd-img,
+.wrapper,
+.col-3-5 div,
+h3,
+blockquote p, footer .col-1-4:nth-child(2) p {
+  margin: 0 auto;
 }
+
 body {
-	padding: 0px 20px;
+  padding: 0px 20px;
 }
-.col-3-5 p:nth-child(2), blockquote a {
-	margin-top: 10px;
-	margin-bottom: 35px;
+
+.col-3-5 p:nth-child(2),
+blockquote a {
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
+
 #about {
-	padding-bottom: 80px;
+  padding-bottom: 80px;
 }
+
 #roasts .col-1-2:first-child .col-2-5 {
-	margin-top: 80px;
+  margin-top: 80px;
 }
-#roasts .col-1-2:last-child .col-2-5, #roasts-2 .col-2-5 {
-	margin-top: 170px;
+
+#roasts .col-1-2:last-child .col-2-5,
+#roasts-2 .col-2-5 {
+  margin-top: 170px;
 }
+
 #price-hb {
-	margin-top: 36px;
+  margin-top: 36px;
 }
-#price-eo, #price-sun {
-	margin-top: 35px;
+
+#price-eo,
+#price-sun {
+  margin-top: 35px;
 }
+
 #price-mid {
-	margin-top: 49px;
+  margin-top: 49px;
 }
+
 #price-es {
-	margin-top: 32px;
+  margin-top: 32px;
 }
+
 #espresso-p {
-	margin-top: 60px;
-	margin-bottom: 15px;
+  margin-top: 60px;
+  margin-bottom: 15px;
 }
+
 #roasts .col-1-2 .col-3-5 {
-	margin-bottom: 70px;
+  margin-bottom: 70px;
 }
-.wrapper {
-	width: 75%; 
+
+.wrapper, footer .col-1-4:nth-child(2) p {
+  width: 75%;
 }
+
 .row:after {
-	clear: both;
-	content:"";
-	display: table;
+  clear: both;
+  content: "";
+  display: table;
 }
-img{
-	max-width: 100%;
+
+img {
+  max-width: 100%;
 }
+
 [class*='col-'] {
-	float: left;
-	margin-bottom: 20px;
-	padding-right: 20px;
+  float: left;
+  margin-bottom: 20px;
+  padding-right: 20px;
 }
-[class*='col-']:last-of-type{
-	padding-right: 0;
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
 }
+
 .col-1-1 {
-	width: 100%;
+  width: 100%;
 }
+
 .col-1-2 {
-	width: 50%;
+  width: 50%;
 }
+
 .col-1-3 {
-	width: 33.33%;
+  width: 33.33%;
 }
+
 .col-1-4 {
-	width: 25%;
-	margin-top: 25px;
+  width: 25%;
+  margin-top: 25px;
 }
+
 .col-1-5 {
-	width: 20%;
+  width: 20%;
 }
+
 .col-1-6 {
-	width: 16.66%;
+  width: 16.66%;
 }
+
 .col-1-7 {
-	width: 14.2%;
+  width: 14.2%;
 }
+
 .col-1-8 {
-	width: 12.5%;
+  width: 12.5%;
 }
+
 .col-1-9 {
-	width: 11.11%;
+  width: 11.11%;
 }
+
 .col-1-10 {
-	width: 10%;
+  width: 10%;
 }
+
 .col-1-11 {
-	width: 9.091%;
+  width: 9.091%;
 }
+
 .col-1-12 {
-	width: 8.33%;
+  width: 8.33%;
 }
+
 .col-2-3 {
-	width: 66.66%;
+  width: 66.66%;
 }
-.col-3-4 {
-	width: 75%;
-}
+
 .col-3-5 {
-	width: 60%;
-	padding: 30px !important;
+  width: 60%;
+  padding: 30px !important;
 }
-#roasts-2 .col-3-5{
-	padding: 20px 10px !important;
+
+#roasts-2 .col-3-5 {
+  padding: 20px 10px !important;
 }
+
 .col-2-5 {
-	width: 40%;
+  width: 40%;
 }
+
 .col-5-6 {
-	width: 83.33%;
+  width: 83.33%;
 }
+
 .col-3-7 {
-	width: 43%;
+  width: 43%;
 }
+
 .col-4-7 {
-	width: 57%;
+  width: 57%;
 }
+
 .col-5-8 {
-	width: 62.5%;
+  width: 62.5%;
 }
+
 .col-3-8 {
-	width: 37.5%;
+  width: 37.5%;
 }
+
 .col-2-9 {
-	width: 22.2%;
+  width: 22.2%;
 }
+
 .col-7-9 {
-	width: 77.8%;
+  width: 77.8%;
 }
+
 .col-3-10 {
-	width: 30%;
+  width: 30%;
 }
+
 .col-7-10 {
-	width: 70%;
+  width: 70%;
 }
+
 .col-5-11 {
-	width: 45%;
+  width: 45%;
 }
+
 .col-6-11 {
-	width: 55%;
+  width: 55%;
 }
+
 .col-11-12 {
-	width: 91.67%;
+  width: 91.67%;
 }
+
 /*-------------- 3.2 - Section Name ---------------- */
+
 /*-------------- 3.3 - Section Name ---------------- */
+
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
-#bkgrnd-img{
-	background: url(../img/hero.jpg) no-repeat 0 -120px;
-	-moz-background-size: cover;
-	-ms-background-size: cover;
-	-o-background-size: cover;
-	-webkit-background-size: cover;
-	background-size: cover;
-	padding: 30px 0px 100px 0px;
+
+#bkgrnd-img {
+  background: url(../img/hero.jpg) no-repeat 0 -120px;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 30px 0 100px;
 }
-#about-img  {
-	background: url(../img/about.jpg) no-repeat 0 -30px;
-	height: 400px;
+
+#about-img {
+  background: url(../img/about.jpg) no-repeat 0 -30px;
+  height: 400px;
 }
+
 #map {
-	height: 200px;
+  height: 200px;
 }
+
 .col-3-5 div {
-	border-bottom: solid thin white;
-	width: 45%;
+  border-bottom: solid thin white;
+  width: 45%;
 }
+
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
+
 /*--------------5.1 - Background Colors ---------------- */
-#bkgrnd-img a, blockquote, .col-3-5 a, #newsletter a, #contact a {
-	background-color: #BA9F64;
+
+#bkgrnd-img a,
+blockquote,
+.col-3-5 a,
+#newsletter a,
+#contact a {
+  background: #BA9F64;
 }
-#bkgrnd-img a:hover, .col-3-5 a:hover, #newsletter a:hover, #contact a:hover {
-	background-color: #7B6955;
+
+#bkgrnd-img a:hover,
+.col-3-5 a:hover,
+#newsletter a:hover,
+#contact a:hover {
+  background: #7B6955;
 }
+
 #newsletter {
-	background-color: #1A1E25;
+  background: #1A1E25;
 }
+
 .bkgrnd-grey {
-	background-color: #EFEFEF;
+  background: #EFEFEF;
 }
+
 .col-3-5 {
-	background-color: #1A1E25;
+  background: #1A1E25;
 }
 
 /*-------------- 5.2 - Text Colors ---------------- */
+
 /*-------------- 5.3 - Text Sizes ---------------- */
+
 /*-------------- 5.4 - Alignments ---------------- */
+
 label {
-	display: none;
+  display: none;
 }
-#contact input{
-	display: block;
+
+#contact input {
+  display: block;
 }
-#newsletter h4, #newsletter form, #newsletter p, nav ul li, footer .col-1-4:last-child li {
-	display: inline;
+
+#newsletter header,
+#newsletter form,
+#newsletter p,
+nav ul li,
+footer .col-1-4:last-child li {
+  display: inline;
 }
+
 #f-right {
-	float: right;
+  float: right;
 }
-.txt-algn-cntr, h2, h5, h5 + p {
-	text-align: center;
+
+.txt-algn-cntr,
+h2,
+h4,
+h4 + p, #newsletter {
+  text-align: center;
 }
-*,*:after, *:before {
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -506,164 +759,237 @@ label {
 
 
 @media (max-width: 480px) {
-/*--------------------------------------------------------------
+  /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
-/*-------------- 1.1 headings ---------------- */
-	h1 {
-		padding-bottom: 0px;
-	}
-	#newsletter h4, .col-1-4, footer .col-1-4:nth-child(3), #bkgrnd-img {
-		text-align: center;
-	}
-	#newsletter h4 {
-		display: block;
-		margin: 0;
-		margin-bottom: 40px;
-	}
-	h5, h5 + p, nav ul li {
-		font-size: 1.2rem;	
-	}
-/*-------------- 1.2 body copy ---------------- */
-	h1 + p {
-		padding: 0 5%;
-		font-size: 1.5rem;
-	}
-	h2 + p {
-		padding: 0 7.7%;
-	} 
-	h5 + p {
-		width: 45%;
-		margin: 0 auto;
-		margin-bottom: 30px;
-	}
-	blockquote p {
-		padding: 15% 10%;
-	}
-	#contact .col-1-2, #about .col-1-2 {
-		margin-top: 10px;
-	}
-	#disclaimer {
-		padding: 0% 5%;
-	}
-	#disclaimer, blockquote p, h2 + p {
-		line-height: 1.9rem;
-	}
-/*-------------- 1.3 buttons ---------------- */
-/*-------------- 1.4 forms ---------------- */
-	#newsletter form {
-		margin-left: 40px;
-	}
-	#newsletter form input {
-		width: 50%;
-	}
-/*-------------- 1.5 lists ---------------- */
-/*-------------- 1.6 tables ---------------- */
-/*--------------------------------------------------------------
+
+  /*-------------- 1.1 headings ---------------- */
+
+  h1 {
+    padding-bottom: 0px;
+  }
+
+  #newsletter header p,
+  .col-1-4,
+  footer .col-1-4:nth-child(3),
+  #bkgrnd-img {
+    text-align: center;
+  }
+
+  #newsletter header {
+    display: block;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  h4,
+  h4 + p,
+  nav ul li {
+    font-size: 1.2rem;
+  }
+
+  /*-------------- 1.2 body copy ---------------- */
+
+  h1 + p {
+    padding: 0 5%;
+    font-size: 1.5rem;
+  }
+
+  h2 + p {
+    padding: 0 7.7%;
+  }
+
+  h4 + p {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  blockquote p {
+    padding: 15% 10%;
+  }
+
+  #contact .col-1-2,
+  #about .col-1-2 {
+    margin-top: 10px;
+  }
+
+  #disclaimer {
+    padding: 0% 5%;
+  }
+
+  #disclaimer,
+  blockquote p,
+  h2 + p {
+    line-height: 1.9rem;
+  }
+
+  /*-------------- 1.3 buttons ---------------- */
+
+  /*-------------- 1.4 forms ---------------- */
+
+  #newsletter form {
+    margin-left: 40px;
+  }
+
+  #newsletter form input {
+    width: 50%;
+  }
+
+  /*-------------- 1.5 lists ---------------- */
+
+  /*-------------- 1.6 tables ---------------- */
+
+  /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
-/*-------------- 2.1 main menu ---------------- */
-	nav ul li {
-		padding: 0px 20px;
-	}
 
-/*-------------- 2.2 sub menu ---------------- */
-/*-------------- 2.3 footer menu ---------------- */
-	footer .col-1-4:nth-child(3) ul {
-		-o-column-count: 1;
-		-ms-column-count: 1;
-		-webkit-column-count: 1; 
-		-moz-column-count: 1; 
-		column-count: 1;
-	}
-	footer .col-1-4:nth-child(3)  {
-		padding: 0px;
-		font-weight: 700;
-	}
-	footer .col-1-4:nth-child(3) h5, #about-img {
-		display: none;
-	}
-/*--------------------------------------------------------------
+  /*-------------- 2.1 main menu ---------------- */
+
+  nav ul li {
+    padding: 0px 20px;
+  }
+
+  /*-------------- 2.2 sub menu ---------------- */
+
+  /*-------------- 2.3 footer menu ---------------- */
+
+  footer .col-1-4:nth-child(3) ul {
+    -o-column-count: 1;
+    -ms-column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+  footer .col-1-4:nth-child(3) {
+    padding: 0px;
+    font-weight: 700;
+  }
+
+  footer .col-1-4:nth-child(3) h4,
+  #about-img {
+    display: none;
+  }
+
+  /*--------------------------------------------------------------
 3.0 - CONTENT
 -------------------------------------------------------------- */
-/*-------------- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---------------- */
-	.wrapper {
-		width: 100%;
-	}
-	body {
-		padding: 0px;
-	}
-	.col-1-3, .col-1-2, .col-1-4 {
-		width: 100%;
-	}
-	.col-1-2, .col-1-3 {
-		padding: 0px;
-	}
-	.col-2-5, .col-3-5 {
-		margin: 0px;
-	}
-	.col-2-5, .col-3-5 {
-		width: 50%;
-		background-color: #1A1E25;
-	}
-	#roasts .col-1-2 .col-3-5, .col-1-4 {
-		margin-bottom: 0px;
-	}
-	#roasts .col-1-2:first-child .col-2-5, #roasts-2 .col-1-3:nth-child(2) .col-2-5, #roasts-2 .col-1-3:first-child .col-2-5, #roasts-2 .col-1-3:last-child .col-2-5 {
-		padding-top: 70px;
-	}
-	#roasts .col-1-2:first-child .col-2-5 {
-		padding-bottom: 51px;
-	}
-	#roasts .col-1-2:last-child .col-2-5 {
-		padding-top: 110px;
-		padding-bottom: 77px;
-	}
-	#roasts-2 .col-1-3:nth-child(2) .col-2-5 {
-		padding-bottom: 87px;
-	}
-	#roasts-2 .col-1-3:first-child .col-2-5 {
-		padding-bottom: 73px;
-	}
-	#roasts-2 .col-1-3:last-child .col-2-5 {
-		padding-bottom: 74px;
-	}
-	#roasts .col-1-2:first-child .col-2-5, #roasts .col-1-2:last-child .col-2-5, #roasts-2 .col-2-5 {
-		margin-top: 0px;
-	}
-	.col-2-5 {
-		padding-left: 20px;
-	}
-	.col-2-5 p {
-		color: #fff;
-	}
-/*-------------- 3.2 - Section Name ---------------- */
-/*-------------- 3.3 - Section Name ---------------- */
-/*--------------------------------------------------------------
+
+  /*-------------- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---------------- */
+
+  .wrapper {
+    width: 100%;
+  }
+
+  body {
+    padding: 0px;
+  }
+
+  .col-1-3,
+  .col-1-2,
+  .col-1-4 {
+    width: 100%;
+  }
+
+  .col-1-2,
+  .col-1-3 {
+    padding: 0px;
+  }
+
+  .col-2-5,
+  .col-3-5 {
+    margin: 0px;
+  }
+
+  .col-2-5,
+  .col-3-5 {
+    width: 50%;
+    background-color: #1A1E25;
+  }
+
+  #roasts .col-1-2 .col-3-5,
+  .col-1-4 {
+    margin-bottom: 0px;
+  }
+
+  #roasts .col-1-2:first-child .col-2-5,
+  #roasts-2 .col-1-3:nth-child(2) .col-2-5,
+  #roasts-2 .col-1-3:first-child .col-2-5,
+  #roasts-2 .col-1-3:last-child .col-2-5 {
+    padding-top: 70px;
+  }
+
+  #roasts .col-1-2:first-child .col-2-5 {
+    padding-bottom: 51px;
+  }
+
+  #roasts .col-1-2:last-child .col-2-5 {
+    padding-top: 110px;
+    padding-bottom: 77px;
+  }
+
+  #roasts-2 .col-1-3:nth-child(2) .col-2-5 {
+    padding-bottom: 87px;
+  }
+
+  #roasts-2 .col-1-3:first-child .col-2-5 {
+    padding-bottom: 73px;
+  }
+
+  #roasts-2 .col-1-3:last-child .col-2-5 {
+    padding-bottom: 74px;
+  }
+
+  #roasts .col-1-2:first-child .col-2-5,
+  #roasts .col-1-2:last-child .col-2-5,
+  #roasts-2 .col-2-5 {
+    margin-top: 0px;
+  }
+
+  .col-2-5 {
+    padding-left: 20px;
+  }
+
+  .col-2-5 p {
+    color: #fff;
+  }
+
+  /*-------------- 3.2 - Section Name ---------------- */
+
+  /*-------------- 3.3 - Section Name ---------------- */
+
+  /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
-	h1 img {
-		max-width: 40%;
-	}
-	footer img {
-		width: 30%;
-		margin-left: 20px;
-	}
-	#bkgrnd-img {
-		background-size: auto;
-		background-position: 50% 25%;
-	}
-/*--------------------------------------------------------------
+
+  h1 img {
+    max-width: 40%;
+  }
+
+  footer img {
+    width: 30%;
+    margin-left: 20px;
+  }
+
+  #bkgrnd-img {
+    background-size: auto;
+    background-position: 50% 25%;
+  }
+
+  /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
-/*--------------5.1 - Background Colors ---------------- */
-/*-------------- 5.2 - Text Colors ---------------- */
-/*-------------- 5.3 - Text Sizes ---------------- */
-/*-------------- 5.4 - Alignments ---------------- */
 
+  /*--------------5.1 - Background Colors ---------------- */
 
-	
+  /*-------------- 5.2 - Text Colors ---------------- */
+
+  /*-------------- 5.3 - Text Sizes ---------------- */
+
+  /*-------------- 5.4 - Alignments ---------------- */
 }
+
 /* This quarter only need one media querie this is android size. iphone 320
 @media (max-width: 420px) { 
 	.wrapper {
@@ -671,4 +997,3 @@ label {
 	}
 }
 */
-
