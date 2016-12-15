@@ -42,9 +42,9 @@
 <body>
 	<header class="txt-algn-cntr">
 		<div class="wrapper">
-			<nav id="smooth-scroll">
+			<nav class="smooth-scroll" id="home">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="#home">Home</a></li>
 					<li><a href="#roasts">Roasts</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -55,7 +55,7 @@
 			<div class="wrapper">
 				<h1><img src="img/logo.png" alt="Twin Finch Roastery"></h1>
 				<p>An authentic micro-roastery; small, dedicated, and highly focused on quality.</p>
-				<p><a href="#roasts">Our Products</a></p>
+				<p class="smooth-scroll"><a href="#roasts">Our Products</a></p>
 			</div>
 		</div>
 	</header>
@@ -214,8 +214,8 @@
 	</section>
 	<footer class="wrapper">
 		<div class="row">
-			<div class="col-1-4">
-				<a href="#"><img src="img/logo.png" alt="Twin Finch Roastery"></a>
+			<div class="col-1-4 smooth-scroll">
+				<a href="#home"><img src="img/logo.png" alt="Twin Finch Roastery"></a>
 			</div>
 			<div class="col-1-4">
 				<h4>Contact</h4>
@@ -223,9 +223,9 @@
 			</div>
 			<div class="col-1-4">
 				<h4>Site Map</h4>
-				<nav>
+				<nav class="smooth-scroll">
 					<ul>
-						<li><a href="#">Home</a></li>
+						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#roasts">Roasts</a></li>
 						<li><a href="#contact">Contact</a></li>
@@ -245,7 +245,7 @@
 	<script>
 	jQuery(document).ready(function($){
 		// Smooth scroll home nav
-			$('#smooth-scroll').on('click', 'a', function(e) {
+			$('.smooth-scroll').on('click', 'a', function(e) {
 				// prevent default anchor click behavior
 				e.preventDefault();
 			   // store hash
